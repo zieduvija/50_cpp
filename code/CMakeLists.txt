@@ -19,3 +19,5 @@ add_executable(sahs_8 sahs8.cpp)
 add_executable(sahs_9 sahs9.cpp)
 
 add_executable(pentamino_1 pentamino_1.cpp)
+add_executable(pentamino_2 pentamino_2.cpp)
+add_executable(pentamino_3 pentamino_3.cpp)
