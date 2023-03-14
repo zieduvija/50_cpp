@@ -1,0 +1,254 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "50_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_1-Debug-9670340973cd5ce0b34c.json",
+					"name" : "burti_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_2-Debug-3bba5b9dd1953f74907b.json",
+					"name" : "burti_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_3-Debug-dd2b5701fb88b40122ea.json",
+					"name" : "burti_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_4-Debug-e7b62ed615cd382f2932.json",
+					"name" : "burti_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_5-Debug-67ae159f5a1eb3d84ced.json",
+					"name" : "burti_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_6-Debug-b4c109f323543c00a929.json",
+					"name" : "burti_6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "burti_7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-burti_7-Debug-90275fcd6cf11cfaea67.json",
+					"name" : "burti_7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "karto_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-karto_1-Debug-2fcbf69503ca5256a061.json",
+					"name" : "karto_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "karto_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-karto_2-Debug-d3ed783a625e077b289c.json",
+					"name" : "karto_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "karto_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-karto_3-Debug-541e53e0590fb8a83dc7.json",
+					"name" : "karto_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "karto_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-karto_4-Debug-f9cd4129e835e10925f8.json",
+					"name" : "karto_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pentamino_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pentamino_1-Debug-4d025c8b6b5bdb476abe.json",
+					"name" : "pentamino_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pentamino_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pentamino_2-Debug-7cf8285ce0e48462220e.json",
+					"name" : "pentamino_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pentamino_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pentamino_3-Debug-c25156f0daeebe9a4a2a.json",
+					"name" : "pentamino_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_1-Debug-27ca3731dd4efa33642a.json",
+					"name" : "sahs_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_2-Debug-c96f5a1da5506698285f.json",
+					"name" : "sahs_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_3-Debug-ba81e942cc62b5c2fbf9.json",
+					"name" : "sahs_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_4-Debug-cafec4aaa14c9c16ea82.json",
+					"name" : "sahs_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_5-Debug-4b817ab92b55c92ee8b4.json",
+					"name" : "sahs_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_6-Debug-e88e09688090c6741674.json",
+					"name" : "sahs_6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_7-Debug-06d842b5766ffaf5efba.json",
+					"name" : "sahs_7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_8-Debug-c1450241ef52a9daaecb.json",
+					"name" : "sahs_8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sahs_9::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sahs_9-Debug-0f6531ba9df1c4e5d5e0.json",
+					"name" : "sahs_9",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/brr/CLionProjects/cpp50/build",
+		"source" : "C:/Users/brr/CLionProjects/cpp50/code"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

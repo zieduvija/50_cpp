@@ -21,3 +21,8 @@ add_executable(sahs_9 sahs9.cpp)
 add_executable(pentamino_1 pentamino_1.cpp)
 add_executable(pentamino_2 pentamino_2.cpp)
 add_executable(pentamino_3 pentamino_3.cpp)
+
+add_executable(karto_1 karto_1.cpp)
+add_executable(karto_2 karto_2.cpp)
+add_executable(karto_3 karto_3.cpp)
+add_executable(karto_4 karto_4.cpp)
