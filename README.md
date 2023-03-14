@@ -300,7 +300,7 @@ E 4 6</code></pre>
 <pre><code>23</code></pre>
 
 ### Mans rezultāts
-> 12/12 punkti
+> 21/21 punkti
 ### Links uz kodu
 https://github.com/zieduvija/50_cpp/blob/master/code/pentamino_2.cpp
 ### Links uz uzdevumu
@@ -359,7 +359,7 @@ E</code></pre>
 <pre><code>6</code></pre>
 
 ### Mans rezultāts
-> 12/12 punkti
+> 11/11 punkti
 ### Links uz kodu
 https://github.com/zieduvija/50_cpp/blob/master/code/pentamino_3.cpp
 ### Links uz uzdevumu
