@@ -1,4 +1,4 @@
-# 50 C++ uzdevumi 16/50
+# 50 C++ uzdevumi 19/50
 ## Nodaļas
 <details>
 <summary>Burti</summary>
@@ -24,7 +24,7 @@
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti1.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti1.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti1
   
@@ -54,7 +54,7 @@ ezers</code></pre>
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti2.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti2.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti2
 
@@ -79,7 +79,7 @@ https://clevercode.lv/task/show/burti2
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti2.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti3.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti3
 
@@ -105,7 +105,7 @@ a</code></pre>
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti4.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti4.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti4
 
@@ -134,7 +134,7 @@ s</code></pre>
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti5.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti5.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti5
 
@@ -163,7 +163,7 @@ sula</code></pre>
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti6.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti6.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti6
 
@@ -191,9 +191,185 @@ u</code></pre>
 ### Mans rezultāts
 > 5/5 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/burti7.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/burti7.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/burti7
+
+</details>
+
+<details>
+<summary>Pentamino</summary>
+<br>
+
+## Pentamino 1
+
+### Definīcija
+> Pentamino figūras veido no pieciem kvadrātiem, novietojot tos tā, ka katram kvadrātam ir kopīga mala ar kādu citu.
+Šoreiz izmantosim tikai trīs veida pentamino figūras:<br>
+
+![pentam1-1](https://user-images.githubusercontent.com/118617121/225156685-6de7d0d5-4b1c-46dc-8df9-a4774fe15c92.gif)
+<br>
+
+> Sauksim tās par A, B un C veida figūrām. Katra veida figūrai viens kvadrāts ir iekrāsots citādi. Sauksim to par attiecīgā veida figūras galveno kvadrātu.<br>
+Kvadrātveida rūtiņu laukumā, kura izmēri ir 8*8, izvietosim ne vairāk kā 10 iepriekšminētā veida figūras tā, lai katras figūras kvadrāti sakristu ar laukuma rūtiņām, un katra no figūrām pilnībā ietilptu laukumā. Figūras drīkst pārklāties. Figūras nedrīkst būt pagrieztas vai apgrieztas. Laukuma kolonnas ir sanumurētas no kreisās puses uz labo ar naturāliem skaitļiem no 1 līdz 8 pēc kārtas. Analoģiski no lejas uz augšu ir sanumurētas arī rindas.<br>
+**Jūsu uzdevums ir uzrakstīt programmu, kas nosaka, cik no 64 laukuma rūtiņām noklāj vismaz viena pentamino figūra.**
+
+
+### Ievaddatu raksturojums
+> Izvaddatu pirmā rinda satur naturālu skaitli N, 1 <= N <= 10, kas apzīmē uz laukuma izvietoto pentamino figūru skaitu. Katrā no nākošajām N faila rindām tiek dotas kādas figūras apraksts formā
+
+<pre><code> burts kolonnas_numurs rindas_numurs </code></pre>
+> , kur burts norāda attiecīgās figūras veidu (A,B vai C), bet kolonnas un rindas numurs norāda laukuma rūtiņu, kuru noklāj šīs figūras galvenais kvadrāts. Starp burtu un kolonnas numuru, kā arī starp kolonnas numuru un rindas numuru ir viens tukšumsimbols.
+
+
+
+### Izvaddatu raksturojums
+> Ievaddatu vienīgajā rindā jāizvada viens naturāls skaitlis - laukuma rūtiņu skaits, ko noklāj dotās pentamino figūras.
+
+## Piezīmes
+Pirmā testpiemēra zīmējums:<br>
+![pentam1-2](https://user-images.githubusercontent.com/118617121/225157153-14a8561f-2bbf-4307-8939-6511a0556cf2.gif)
+
+
+## Paraugdati
+#### **Stdin**
+<pre><code>5<br>
+A 2 5<br>
+C 5 7<br>
+B 7 6<br>
+C 8 1<br>
+A 4 3</code></pre>
+#### **Stdout**
+<pre><code>22</code></pre>
+
+### Mans rezultāts
+> 12/12 punkti
+### Links uz kodu
+https://github.com/zieduvija/50_cpp/blob/master/code/pentamino_1.cpp
+### Links uz uzdevumu
+https://clevercode.lv/task/show/pentam1
+
+
+
+
+
+## Pentamino 2
+
+### Definīcija
+> Pentamino figūras veido no pieciem kvadrātiem, novietojot tos tā, ka katram kvadrātam ir kopīga mala ar kādu citu.
+Šoreiz izmantosim tikai pieca veida pentamino figūras:<br>
+
+![pentam2-1](https://user-images.githubusercontent.com/118617121/225158132-320bf7ab-b225-4d26-83c1-15d6d9051b10.gif)
+
+
+> Sauksim tās par A, B, C, D un E veida figūrām. Katra veida figūrai viens kvadrāts ir iekrāsots citādi. Sauksim to par attiecīgā veida figūras galveno kvadrātu. <br>
+Kvadrātveida rūtiņu laukumā, kura izmēri ir K*K rūtiņas, izvietosim ne vairāk kā 100 iepriekšminētā veida figūras tā, lai katras figūras kvadrāti sakristu ar laukuma rūtiņām, un katra no figūrām pilnībā ietilptu laukumā. Figūras drīkst pārklāties. Figūras nedrīkst būt pagrieztas vai apgrieztas. Laukuma kolonnas ir sanumurētas no kreisās puses uz labo ar naturāliem skaitļiem no 1 līdz K pēc kārtas. Analoģiski no lejas uz augšu ir sanumurētas arī rindas.<br>
+**Jūsu uzdevums ir uzrakstīt programmu, kas nosaka, cik no laukuma rūtiņām noklāj vismaz viena pentamino figūra.**
+
+
+### Ievaddatu raksturojums
+> Ievaddatu pirmā rinda satur naturālu skaitli K, 1 <= K <= 100, kas apzīmē laukuma malas garumu.
+Faila otrā rinda satur naturālu skaitli N, 1 <= N <= 100, kas apzīmē uz laukuma izvietoto pentamino figūru skaitu.
+Katrā no nākošajām N faila rindām tiek dotas kādas figūras apraksts formā
+
+<pre><code> burts kolonnas_numurs rindas_numurs </code></pre>
+> , kur burts norāda attiecīgās figūras veidu (A,B,C,D vai E), bet kolonnas un rindas numurs norāda laukuma rūtiņu, kuru noklāj šīs figūras galvenais kvadrāts. Starp burtu un kolonnas numuru, kā arī starp kolonnas numuru un rindas numuru ir viens tukšumsimbols.
+
+
+
+### Izvaddatu raksturojums
+> Izvaddatu vienīgajā rindā jāizvada viens naturāls skaitlis - laukuma rūtiņu skaits, ko noklāj dotās pentamino figūras.
+
+## Piezīmes
+Pirmā testpiemēra zīmējums:<br>
+
+![pentam2-2](https://user-images.githubusercontent.com/118617121/225158435-bc92464c-5bfd-4182-8594-2d5ad0681c63.gif)
+
+
+
+## Paraugdati
+#### **Stdin**
+<pre><code>8<br>
+5<br>
+A 2 5<br>
+D 5 7<br>
+B 7 6<br>
+D 8 1<br>
+E 4 6</code></pre>
+#### **Stdout**
+<pre><code>23</code></pre>
+
+### Mans rezultāts
+> 21/21 punkti
+### Links uz kodu
+https://github.com/zieduvija/50_cpp/blob/master/code/pentamino_2.cpp
+### Links uz uzdevumu
+https://clevercode.lv/task/show/pentam2
+
+
+
+
+
+
+## Pentamino 3
+
+### Definīcija
+> Pentamino figūras veido no pieciem kvadrātiem, novietojot tos tā, ka katram kvadrātam ir kopīga mala ar kādu citu.
+Šoreiz izmantosim tikai pieca veida pentamino figūras:<br>
+
+![pentam2-1](https://user-images.githubusercontent.com/118617121/225158132-320bf7ab-b225-4d26-83c1-15d6d9051b10.gif)
+
+
+> Sauksim tās par A, B, C, D un E veida figūrām. Katra veida figūrai viens kvadrāts ir iekrāsots citādi. Sauksim to par attiecīgā veida figūras galveno kvadrātu. <br>
+Kvadrātveida rūtiņu laukumā, kura izmēri ir K*K rūtiņas, izvietosim ne vairāk kā 100 iepriekšminētā veida figūras tā, lai katras figūras kvadrāti sakristu ar laukuma rūtiņām, un katra no figūrām pilnībā ietilptu laukumā. Figūras drīkst pārklāties. Figūras nedrīkst būt pagrieztas vai apgrieztas. Laukuma kolonnas ir sanumurētas no kreisās puses uz labo ar naturāliem skaitļiem no 1 līdz K pēc kārtas. Analoģiski no lejas uz augšu ir sanumurētas arī rindas.<br>
+**Mēs vēlamies jau daļēji aizpildītajā laukumā novietot vēl vienu figūru tā, lai tā nepārklātos ar iepriekš noliktajām.<br>Jūsu uzdevums ir uzrakstīt programmu, kas nosaka, cik dažādās laukuma vietās šo figūru var novietot.**
+
+
+### Ievaddatu raksturojums
+> Ievaddatu pirmā rinda satur naturālu skaitli K, 1 <= K <= 100, kas apzīmē laukuma malas garumu.
+Faila otrā rinda satur naturālu skaitli N, 1 <= N <= 100, kas apzīmē uz laukuma izvietoto pentamino figūru skaitu.
+Katrā no nākošajām N faila rindām tiek dotas kādas figūras apraksts formā
+
+<pre><code> burts kolonnas_numurs rindas_numurs </code></pre>
+> , kur burts norāda attiecīgās figūras veidu (A,B,C,D vai E), bet kolonnas un rindas numurs norāda laukuma rūtiņu, kuru noklāj šīs figūras galvenais kvadrāts. Starp burtu un kolonnas numuru, kā arī starp kolonnas numuru un rindas numuru ir viens tukšumsimbols. Pēc tam faila nākošajā rindā ir dots viens burts (A,B,C,D vai E), kas norāda tās figūras veidu, kuru vēlamies novietot laukumā bez pārklāšanās.
+
+
+
+### Izvaddatu raksturojums
+> Izvaddatu vienīgajā rindā jāizvada viens vesels skaitlis - vietu skaits laukumā, kur iespējams izvietot figūru.
+
+## Piezīmes
+Testpiemēra zīmējums. Derīgās vietas atzīmētas ar krustiņiem:<br>
+
+![pentam3-2](https://user-images.githubusercontent.com/118617121/225158815-b454bca3-53e0-4520-b35c-94cfb4e505dd.gif)
+
+
+
+
+## Paraugdati
+#### **Stdin**
+<pre><code>5<br>
+A 2 5<br>
+D 5 7<br>
+B 7 6<br>
+D 8 1<br>
+E 4 6<br>
+E</code></pre>
+#### **Stdout**
+<pre><code>6</code></pre>
+
+### Mans rezultāts
+> 11/11 punkti
+### Links uz kodu
+https://github.com/zieduvija/50_cpp/blob/master/code/pentamino_3.cpp
+### Links uz uzdevumu
+https://clevercode.lv/task/show/pentam3
+
+
+
+
+
+
 
 </details>
 
@@ -232,7 +408,7 @@ Jāizvada 8 rindas, pa 8 simboliem katrā rindā. i-tās rindas j-tais simbols n
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs1.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs1.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs1
 
@@ -260,7 +436,7 @@ Jāizvada 8 rindas, pa 8 simboliem katrā rindā. i-tās rindas j-tais simbols n
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs2.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs2.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs2
 
@@ -288,7 +464,7 @@ Jāizvada 8 rindas, pa 8 simboliem katrā rindā. i-tās rindas j-tais simbols n
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs3.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs3.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs3
 
@@ -317,7 +493,7 @@ Jāizvada 8 rindas, pa 8 simboliem katrā rindā. i-tās rindas j-tais simbols n
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs4.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs4.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs4
 
@@ -346,7 +522,7 @@ Jāizvada 8 rindas, pa 8 simboliem katrā rindā. i-tās rindas j-tais simbols n
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs5.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs5.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs5
 
@@ -378,7 +554,7 @@ f6</code></pre>
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs6.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs6.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs6
 
@@ -411,7 +587,7 @@ f6</code></pre>
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs7.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs7.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs7
 
@@ -445,7 +621,7 @@ f6</code></pre>
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs8.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs8.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs8
 
@@ -479,7 +655,7 @@ f6</code></pre>
 ### Mans rezultāts
 > 17/17 punkti
 ### Links uz kodu
-https://github.com/zieduvija/cpp50/blob/master/src/sahs9.cpp
+https://github.com/zieduvija/50_cpp/blob/master/code/sahs9.cpp
 ### Links uz uzdevumu
 https://clevercode.lv/task/show/sahs9
 </details>
