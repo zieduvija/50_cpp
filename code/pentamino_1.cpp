@@ -10,20 +10,19 @@ int main() {
         for(int j = 0; j < 8; j++)
             field[i][j] = false;
 
-    for (int i = 0; i < x; i++) {
+    for (int i = 0; i < x; i++)
+    {
         char type; int col, row;
         std::cin >> type >> col >> row;
         col--; row--;
         row = 7 - row;
 
-        if (type == 'A') {
+        if (type == 'A')
             field[row][col] = field[row+1][col] = field[row+2][col] = field[row+2][col+1] = field[row+2][col+2] = true;
-        } else if (type == 'B') {
+        else if (type == 'B')
             field[row][col] = field[row+1][col] = field[row+2][col] = field[row][col+1] = field[row+1][col+1] = true;
-        } else if (type == 'C') {
+        else
             field[row][col] = field[row][col-1] = field[row][col-2] = field[row][col-3] = field[row-1][col] = true;
-        }
-
 
     }
 
