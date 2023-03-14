@@ -568,6 +568,39 @@ build sahs_9.exe: CXX_EXECUTABLE_LINKER__sahs_9_Debug CMakeFiles/sahs_9.dir/sahs
   TARGET_IMPLIB = libsahs_9.dll.a
   TARGET_PDB = sahs_9.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pentamino_1
+
+
+#############################################
+# Order-only phony target for pentamino_1
+
+build cmake_object_order_depends_target_pentamino_1: phony || CMakeFiles/pentamino_1.dir
+
+build CMakeFiles/pentamino_1.dir/pentamino_1.cpp.obj: CXX_COMPILER__pentamino_1_Debug C$:/Users/brr/CLionProjects/cpp50/code/pentamino_1.cpp || cmake_object_order_depends_target_pentamino_1
+  DEP_FILE = CMakeFiles\pentamino_1.dir\pentamino_1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\pentamino_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\pentamino_1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pentamino_1
+
+
+#############################################
+# Link the executable pentamino_1.exe
+
+build pentamino_1.exe: CXX_EXECUTABLE_LINKER__pentamino_1_Debug CMakeFiles/pentamino_1.dir/pentamino_1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pentamino_1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pentamino_1.exe
+  TARGET_IMPLIB = libpentamino_1.dll.a
+  TARGET_PDB = pentamino_1.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -608,6 +641,8 @@ build burti_6: phony burti_6.exe
 
 build burti_7: phony burti_7.exe
 
+build pentamino_1: phony pentamino_1.exe
+
 build sahs_1: phony sahs_1.exe
 
 build sahs_2: phony sahs_2.exe
@@ -634,7 +669,7 @@ build sahs_9: phony sahs_9.exe
 #############################################
 # Folder: C:/Users/brr/CLionProjects/cpp50/build
 
-build all: phony burti_1.exe burti_2.exe burti_3.exe burti_4.exe burti_5.exe burti_6.exe burti_7.exe sahs_1.exe sahs_2.exe sahs_3.exe sahs_4.exe sahs_5.exe sahs_6.exe sahs_7.exe sahs_8.exe sahs_9.exe
+build all: phony burti_1.exe burti_2.exe burti_3.exe burti_4.exe burti_5.exe burti_6.exe burti_7.exe sahs_1.exe sahs_2.exe sahs_3.exe sahs_4.exe sahs_5.exe sahs_6.exe sahs_7.exe sahs_8.exe sahs_9.exe pentamino_1.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

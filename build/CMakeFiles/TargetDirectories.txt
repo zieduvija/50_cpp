@@ -14,5 +14,6 @@ C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_6.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_7.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_8.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_9.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/pentamino_1.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/edit_cache.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/rebuild_cache.dir
