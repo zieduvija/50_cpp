@@ -15,5 +15,13 @@ C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_7.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_8.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/sahs_9.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/pentamino_1.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/pentamino_2.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/pentamino_3.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/karto_1.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/karto_2.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/karto_3.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/karto_4.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/cipvirk_1.dir
+C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/cipvirk_2.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/edit_cache.dir
 C:/Users/brr/CLionProjects/cpp50/build/CMakeFiles/rebuild_cache.dir

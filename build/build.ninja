@@ -601,6 +601,270 @@ build pentamino_1.exe: CXX_EXECUTABLE_LINKER__pentamino_1_Debug CMakeFiles/penta
   TARGET_IMPLIB = libpentamino_1.dll.a
   TARGET_PDB = pentamino_1.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pentamino_2
+
+
+#############################################
+# Order-only phony target for pentamino_2
+
+build cmake_object_order_depends_target_pentamino_2: phony || CMakeFiles/pentamino_2.dir
+
+build CMakeFiles/pentamino_2.dir/pentamino_2.cpp.obj: CXX_COMPILER__pentamino_2_Debug C$:/Users/brr/CLionProjects/cpp50/code/pentamino_2.cpp || cmake_object_order_depends_target_pentamino_2
+  DEP_FILE = CMakeFiles\pentamino_2.dir\pentamino_2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\pentamino_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\pentamino_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pentamino_2
+
+
+#############################################
+# Link the executable pentamino_2.exe
+
+build pentamino_2.exe: CXX_EXECUTABLE_LINKER__pentamino_2_Debug CMakeFiles/pentamino_2.dir/pentamino_2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pentamino_2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pentamino_2.exe
+  TARGET_IMPLIB = libpentamino_2.dll.a
+  TARGET_PDB = pentamino_2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pentamino_3
+
+
+#############################################
+# Order-only phony target for pentamino_3
+
+build cmake_object_order_depends_target_pentamino_3: phony || CMakeFiles/pentamino_3.dir
+
+build CMakeFiles/pentamino_3.dir/pentamino_3.cpp.obj: CXX_COMPILER__pentamino_3_Debug C$:/Users/brr/CLionProjects/cpp50/code/pentamino_3.cpp || cmake_object_order_depends_target_pentamino_3
+  DEP_FILE = CMakeFiles\pentamino_3.dir\pentamino_3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\pentamino_3.dir
+  OBJECT_FILE_DIR = CMakeFiles\pentamino_3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pentamino_3
+
+
+#############################################
+# Link the executable pentamino_3.exe
+
+build pentamino_3.exe: CXX_EXECUTABLE_LINKER__pentamino_3_Debug CMakeFiles/pentamino_3.dir/pentamino_3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\pentamino_3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pentamino_3.exe
+  TARGET_IMPLIB = libpentamino_3.dll.a
+  TARGET_PDB = pentamino_3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target karto_1
+
+
+#############################################
+# Order-only phony target for karto_1
+
+build cmake_object_order_depends_target_karto_1: phony || CMakeFiles/karto_1.dir
+
+build CMakeFiles/karto_1.dir/karto_1.cpp.obj: CXX_COMPILER__karto_1_Debug C$:/Users/brr/CLionProjects/cpp50/code/karto_1.cpp || cmake_object_order_depends_target_karto_1
+  DEP_FILE = CMakeFiles\karto_1.dir\karto_1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\karto_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\karto_1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target karto_1
+
+
+#############################################
+# Link the executable karto_1.exe
+
+build karto_1.exe: CXX_EXECUTABLE_LINKER__karto_1_Debug CMakeFiles/karto_1.dir/karto_1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\karto_1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = karto_1.exe
+  TARGET_IMPLIB = libkarto_1.dll.a
+  TARGET_PDB = karto_1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target karto_2
+
+
+#############################################
+# Order-only phony target for karto_2
+
+build cmake_object_order_depends_target_karto_2: phony || CMakeFiles/karto_2.dir
+
+build CMakeFiles/karto_2.dir/karto_2.cpp.obj: CXX_COMPILER__karto_2_Debug C$:/Users/brr/CLionProjects/cpp50/code/karto_2.cpp || cmake_object_order_depends_target_karto_2
+  DEP_FILE = CMakeFiles\karto_2.dir\karto_2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\karto_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\karto_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target karto_2
+
+
+#############################################
+# Link the executable karto_2.exe
+
+build karto_2.exe: CXX_EXECUTABLE_LINKER__karto_2_Debug CMakeFiles/karto_2.dir/karto_2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\karto_2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = karto_2.exe
+  TARGET_IMPLIB = libkarto_2.dll.a
+  TARGET_PDB = karto_2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target karto_3
+
+
+#############################################
+# Order-only phony target for karto_3
+
+build cmake_object_order_depends_target_karto_3: phony || CMakeFiles/karto_3.dir
+
+build CMakeFiles/karto_3.dir/karto_3.cpp.obj: CXX_COMPILER__karto_3_Debug C$:/Users/brr/CLionProjects/cpp50/code/karto_3.cpp || cmake_object_order_depends_target_karto_3
+  DEP_FILE = CMakeFiles\karto_3.dir\karto_3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\karto_3.dir
+  OBJECT_FILE_DIR = CMakeFiles\karto_3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target karto_3
+
+
+#############################################
+# Link the executable karto_3.exe
+
+build karto_3.exe: CXX_EXECUTABLE_LINKER__karto_3_Debug CMakeFiles/karto_3.dir/karto_3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\karto_3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = karto_3.exe
+  TARGET_IMPLIB = libkarto_3.dll.a
+  TARGET_PDB = karto_3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target karto_4
+
+
+#############################################
+# Order-only phony target for karto_4
+
+build cmake_object_order_depends_target_karto_4: phony || CMakeFiles/karto_4.dir
+
+build CMakeFiles/karto_4.dir/karto_4.cpp.obj: CXX_COMPILER__karto_4_Debug C$:/Users/brr/CLionProjects/cpp50/code/karto_4.cpp || cmake_object_order_depends_target_karto_4
+  DEP_FILE = CMakeFiles\karto_4.dir\karto_4.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\karto_4.dir
+  OBJECT_FILE_DIR = CMakeFiles\karto_4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target karto_4
+
+
+#############################################
+# Link the executable karto_4.exe
+
+build karto_4.exe: CXX_EXECUTABLE_LINKER__karto_4_Debug CMakeFiles/karto_4.dir/karto_4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\karto_4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = karto_4.exe
+  TARGET_IMPLIB = libkarto_4.dll.a
+  TARGET_PDB = karto_4.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cipvirk_1
+
+
+#############################################
+# Order-only phony target for cipvirk_1
+
+build cmake_object_order_depends_target_cipvirk_1: phony || CMakeFiles/cipvirk_1.dir
+
+build CMakeFiles/cipvirk_1.dir/cipvirk1.cpp.obj: CXX_COMPILER__cipvirk_1_Debug C$:/Users/brr/CLionProjects/cpp50/code/cipvirk1.cpp || cmake_object_order_depends_target_cipvirk_1
+  DEP_FILE = CMakeFiles\cipvirk_1.dir\cipvirk1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cipvirk_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\cipvirk_1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cipvirk_1
+
+
+#############################################
+# Link the executable cipvirk_1.exe
+
+build cipvirk_1.exe: CXX_EXECUTABLE_LINKER__cipvirk_1_Debug CMakeFiles/cipvirk_1.dir/cipvirk1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\cipvirk_1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cipvirk_1.exe
+  TARGET_IMPLIB = libcipvirk_1.dll.a
+  TARGET_PDB = cipvirk_1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cipvirk_2
+
+
+#############################################
+# Order-only phony target for cipvirk_2
+
+build cmake_object_order_depends_target_cipvirk_2: phony || CMakeFiles/cipvirk_2.dir
+
+build CMakeFiles/cipvirk_2.dir/cipvirk2.cpp.obj: CXX_COMPILER__cipvirk_2_Debug C$:/Users/brr/CLionProjects/cpp50/code/cipvirk2.cpp || cmake_object_order_depends_target_cipvirk_2
+  DEP_FILE = CMakeFiles\cipvirk_2.dir\cipvirk2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cipvirk_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\cipvirk_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cipvirk_2
+
+
+#############################################
+# Link the executable cipvirk_2.exe
+
+build cipvirk_2.exe: CXX_EXECUTABLE_LINKER__cipvirk_2_Debug CMakeFiles/cipvirk_2.dir/cipvirk2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\cipvirk_2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cipvirk_2.exe
+  TARGET_IMPLIB = libcipvirk_2.dll.a
+  TARGET_PDB = cipvirk_2.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -641,7 +905,23 @@ build burti_6: phony burti_6.exe
 
 build burti_7: phony burti_7.exe
 
+build cipvirk_1: phony cipvirk_1.exe
+
+build cipvirk_2: phony cipvirk_2.exe
+
+build karto_1: phony karto_1.exe
+
+build karto_2: phony karto_2.exe
+
+build karto_3: phony karto_3.exe
+
+build karto_4: phony karto_4.exe
+
 build pentamino_1: phony pentamino_1.exe
+
+build pentamino_2: phony pentamino_2.exe
+
+build pentamino_3: phony pentamino_3.exe
 
 build sahs_1: phony sahs_1.exe
 
@@ -669,7 +949,7 @@ build sahs_9: phony sahs_9.exe
 #############################################
 # Folder: C:/Users/brr/CLionProjects/cpp50/build
 
-build all: phony burti_1.exe burti_2.exe burti_3.exe burti_4.exe burti_5.exe burti_6.exe burti_7.exe sahs_1.exe sahs_2.exe sahs_3.exe sahs_4.exe sahs_5.exe sahs_6.exe sahs_7.exe sahs_8.exe sahs_9.exe pentamino_1.exe
+build all: phony burti_1.exe burti_2.exe burti_3.exe burti_4.exe burti_5.exe burti_6.exe burti_7.exe sahs_1.exe sahs_2.exe sahs_3.exe sahs_4.exe sahs_5.exe sahs_6.exe sahs_7.exe sahs_8.exe sahs_9.exe pentamino_1.exe pentamino_2.exe pentamino_3.exe karto_1.exe karto_2.exe karto_3.exe karto_4.exe cipvirk_1.exe cipvirk_2.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

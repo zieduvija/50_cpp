@@ -26,3 +26,6 @@ add_executable(karto_1 karto_1.cpp)
 add_executable(karto_2 karto_2.cpp)
 add_executable(karto_3 karto_3.cpp)
 add_executable(karto_4 karto_4.cpp)
+
+add_executable(cipvirk_1 cipvirk1.cpp)
+add_executable(cipvirk_2 cipvirk2.cpp)
