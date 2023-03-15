@@ -1,4 +1,4 @@
-# 50 C++ uzdevumi 19/50
+# 50 C++ uzdevumi 23/50
 ## Nodaļas
 <details>
 <summary>Burti</summary>
