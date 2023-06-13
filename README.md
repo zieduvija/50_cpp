@@ -1,4 +1,4 @@
-# 50 C++ uzdevumi 24/50
+# 50 C++ uzdevumi 50/50
 ## Nodaļas
 <details>
 <summary>Burti</summary>
@@ -660,4 +660,1540 @@ https://github.com/zieduvija/50_cpp/blob/master/code/sahs9.cpp
 https://clevercode.lv/task/show/sahs9
 </details>
 
+<details>
+<summary>Leetcode</summary>
+  
+## Uzdevumi pildīti iekš leetcode
+
+### Uzdevums: Two Sum 
+
+Grūtība: Easy 
+
+46.7K 
+
+1.5K 
+
+Companies 
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.You may assume that each input would have exactly one solution, and you may not use the same element twice. 
+
+You can return the answer in any order. 
+
+ links: https://leetcode.com/problems/two-sum/description/ 
+
+Atbildes kods:  
+
+class Solution { 
+
+public: 
+
+    vector<int> twoSum(vector<int>& nums, int target) { 
+
+        unordered_map<int, int> skatili; 
+
+        for(int i=0;i<nums.size();i++){ 
+
+            auto it=skatili.find(target-nums[i]); 
+
+ 
+
+            if(it!=skatili.end()) return { 
+
+                i, it->second 
+
+                }; 
+
+            skatili.insert({nums[i], i}); 
+
+        } 
+
+        return {-1, -1}; 
+
+    } 
+
+}; 
+
+ 
+
+ 
+
+Rezultāts: Accepted, Runtime: 4 ms 
+  
+  
+  
+### Uzdevums: isPalindrome 
+
+Pārbaudīt vai int mainīgais ir palindroms. 
+
+Links: https://leetcode.com/problems/palindrome-number/ 
+
+class Solution { 
+
+public: 
+
+    bool isPalindrome(int x) { 
+
+        ostringstream converter; 
+
+        converter << x; 
+
+        string virkne = converter.str(); 
+
+         
+
+        int i = 0, j = virkne.size() - 1; 
+
+        while (i < j) { 
+
+            if (virkne[j] != virkne[i]) 
+
+                return false; 
+
+            i++; j--; 
+
+        } 
+
+        return true; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+  
+  
+  
+### Uzdevums: Longest common prefix 
+
+ 
+
+Atrast virkņu masīva garāko priedēkli ar kuru sākās visi vārdi. 
+
+ 
+
+Links: https://leetcode.com/problems/longest-common-prefix/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    string longestCommonPrefix(vector<string>& strs) { 
+
+        sort(strs.begin(),strs.end()); 
+
+        int a=strs.size(); 
+
+        string n = strs[0], m = strs[a-1], atb = ""; 
+
+        for(int i=0;i<n.size();i++){ 
+
+            if(n[i]==m[i]) 
+
+            atb+=n[i]; 
+
+            else break; 
+
+        } 
+
+        return atb; 
+
+         
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, 0ms runtime 
+
+ 
+
+ 
+ 
+
+### Uzdevums: Valid Parenthesis 
+
+ 
+
+Parbaduīt vai virknē visas atvertās iekavas ir aizvērtas. 
+
+ 
+
+Links: https://leetcode.com/problems/valid-parentheses/ 
+
+ 
+
+#include <stack> 
+
+#include <string> 
+
+ 
+
+class Solution { 
+
+public: 
+
+    bool isValid(string s) { 
+
+        std::stack<char> st; 
+
+        for (char ch : s) { 
+
+            if (ch == '(' || ch == '{' || ch == '[') { 
+
+                st.push(ch); 
+
+            } else { 
+
+                if (!st.empty()) { 
+
+                    char top = st.top(); 
+
+                    if ((ch == ')' && top == '(') || 
+
+                        (ch == '}' && top == '{') || 
+
+                        (ch == ']' && top == '[')) { 
+
+                        st.pop(); 
+
+                    } else { 
+
+                        return false; 
+
+                    } 
+
+                } else { 
+
+                    return false; 
+
+                } 
+
+            } 
+
+        } 
+
+        return st.empty(); 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, ātrs atrisinājums bet izmanto daudz atmiņas. 
+
+ 
+
+ 
+ 
+
+ 
+
+### Uzdevums: Merge two sorted lists 
+
+ 
+
+Apvienot 2 sakārtotus sarakstus ar skaitļiem vienā. 
+
+ 
+
+Links: https://leetcode.com/problems/merge-two-sorted-lists 
+
+ 
+
+/** 
+
+ * Definition for singly-linked list. 
+
+ * struct ListNode { 
+
+ *     int val; 
+
+ *     ListNode *next; 
+
+ *     ListNode() : val(0), next(nullptr) {} 
+
+ *     ListNode(int x) : val(x), next(nullptr) {} 
+
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {} 
+
+ * }; 
+
+ */ 
+
+class Solution { 
+
+public: 
+
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) { 
+
+        ListNode* x = new ListNode(0);  
+
+        ListNode* current = x; 
+
+         
+
+        while (l1 != nullptr && l2 != nullptr) { 
+
+            if (l1->val <= l2->val) { 
+
+                current->next = l1; 
+
+                l1 = l1->next; 
+
+            } else { 
+
+                current->next = l2; 
+
+                l2 = l2->next; 
+
+            } 
+
+            current = current->next; 
+
+        } 
+
+         
+
+        if (l1 != nullptr) { 
+
+            current->next = l1; 
+
+        } else if (l2 != nullptr) { 
+
+            current->next = l2; 
+
+        } 
+
+         
+
+        ListNode* saplSaraksts = x->next;  
+
+        delete x;  
+
+         
+
+        return saplSaraksts; 
+
+    } 
+
+}; 
+
+ 
+
+ 
+
+Akceptēts 
+
+ 
+ 
+
+### Uzdevums: Remove duplicates from Sorted Array 
+
+ 
+
+Izņemt duplikātu skaitļus no int saraksta. 
+
+ 
+
+Links: https://leetcode.com/problems/remove-duplicates-from-sorted-array/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int removeDuplicates(vector<int>& nums) { 
+
+    int sk=1; 
+
+    for(int i=1; i<nums.size(); i++)         
+
+        if(nums[i]!=nums[i-1]) nums[sk++] = nums[i];      
+
+    return sk;  
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, bet lēnāks par 60% no pārējiem iesniegtajiem risinājumiem. 
+
+ 
+
+### Uzdevums: Remove element 
+
+ 
+
+No vector masīva izņemt norādīto skaitli. 
+
+Links: https://leetcode.com/problems/remove-element/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int removeElement(vector<int>& nums, int val) { 
+
+        int j=0; 
+
+        for(int i=0;i<nums.size();i++){ 
+
+            if(nums[i]!=val){ 
+
+                nums[j++]=nums[i]; 
+
+            } 
+
+        } 
+
+        return j;         
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, ļoti vienkāršs risinājums. 
+
+ 
+
+ 
+ 
+
+### Uzdevums: Find the index of the first occurance in a string 
+
+Atrast virknē atrodošos vārdu un atgriezt indeksu kurā tas sākas. 
+
+Links: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int strStr(string haystack, string needle) { 
+
+        int m = haystack.size(); 
+
+        int n = needle.size(); 
+
+         
+
+        if (n == 0) { 
+
+            return 0; 
+
+        } 
+
+         
+
+        for (int i = 0; i <= m - n; i++) { 
+
+            bool atrasts = true; 
+
+             
+
+            for (int j = 0; j < n; j++) { 
+
+                if (haystack[i + j] != needle[j]) { 
+
+                    atrasts = false; 
+
+                    break; 
+
+                } 
+
+            } 
+
+             
+
+            if (atrasts) { 
+
+                return i;  
+
+            } 
+
+        } 
+
+         
+
+        return -1; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums: Search Insert Position 
+
+Atgriezt kurā indeksā ir skaitlis masīvā un kurā tas būtu ja to ievietotu dotajā masīvā. 
+
+Links: https://leetcode.com/problems/search-insert-position/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int searchInsert(vector<int>& nums, int target) { 
+
+        int kreisi = 0; 
+
+        int labi = nums.size() - 1; 
+
+ 
+
+        while (kreisi <= labi) { 
+
+            int vidus = kreisi + (labi - kreisi) / 2; 
+
+            if (nums[vidus] == target) return vidus; 
+
+             else if (nums[vidus] < target) kreisi = vidus + 1; 
+
+             else labi = vidus - 1; 
+
+             
+
+        } 
+
+ 
+
+        return kreisi; 
+
+    } 
+
+}; 
+
+Akceptēts 
+
+### Uzdevums: Length of last word 
+
+ 
+
+No virknes atgriezt tās pēdējā vārda garumu. 
+
+ 
+
+Links: https://leetcode.com/problems/length-of-last-word/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int lengthOfLastWord(string s) { 
+
+        int a = 0, garums = 0; 
+
+        for(int i=s.length()-1;i>=0;i--){ 
+
+            if(s[i] != ' '){ 
+
+                a = i; 
+
+                break; 
+
+                } 
+
+        } 
+
+        for(int i=a;i>=0;i--){ 
+
+            if(s[i]==' ') break; 
+
+            else garums++; 
+
+        } 
+
+        return garums; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, bet nav ātrākais risinājums. 
+
+ 
+
+### Uzdevums: Plus one 
+
+ 
+
+Dots masīvas ar skaitļiem, piem [1,2,3] un tam japieskaita 1, uzskatot masīvu kā pilnu skaitli. [1,2,3] + 1 = [1,2,4] 
+
+Links: https://leetcode.com/problems/plus-one/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    vector<int> plusOne(vector<int>& digits) { 
+
+        int n = digits.size(); 
+
+        int parn = 1; 
+
+ 
+
+        for (int i = n - 1; i >= 0; i--) { 
+
+            int sum = digits[i] + parn; 
+
+            digits[i] = sum % 10; 
+
+            parn = sum / 10; 
+
+        } 
+
+ 
+
+        if (parn != 0) { 
+
+            digits.insert(digits.begin(), parn); 
+
+        } 
+
+ 
+
+        return digits; 
+
+    } 
+
+}; 
+
+Akceptēts
+ 
+ 
+
+### Uzdevums: Add binary 
+
+ 
+
+Doti divi bināri skaitļi virknēs, tos vajag saskaitīt un atgriezt. 
+
+ 
+
+class Solution { 
+
+public: 
+
+    string addBinary(string a, string b) { 
+
+        int parn = 0; 
+
+        string res = ""; 
+
+ 
+
+        int i = a.size() - 1; 
+
+        int j = b.size() - 1; 
+
+ 
+
+        while (i >= 0 || j >= 0 || parn != 0) { 
+
+            int sum = parn; 
+
+            if (i >= 0) { 
+
+                sum += a[i--] - '0'; 
+
+            } 
+
+            if (j >= 0) { 
+
+                sum += b[j--] - '0'; 
+
+            } 
+
+ 
+
+            res = to_string(sum % 2) + res; 
+
+            parn = sum / 2; 
+
+        } 
+
+ 
+
+        return res; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+ 
+ 
+
+### Uzdevums: Sqrt(x) 
+
+Dots pozitīvs skaitlis vajag atgriezt tuvāko int mainīgo tā kvadrātsaknei. 
+
+ 
+
+Links: https://leetcode.com/problems/sqrtx/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int mySqrt(int x) { 
+
+        if (x == 0) 
+
+            return x; 
+
+        int kreisi = 1, labi = x, res = 0; 
+
+ 
+
+        while (kreisi <= labi) { 
+
+            int vidus = kreisi + (labi - kreisi) / 2; 
+
+            if (vidus <= x / vidus) { 
+
+                res = vidus; 
+
+                kreisi = vidus + 1; 
+
+            } else labi = vidus - 1;     
+
+        } 
+
+        return res; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums: Climbing Stairs 
+
+ 
+
+Ir dotas kāpnes ar n skaitu pakāpieniem, tu vari vienā gājienā uzkāpt 1 vai 2 pakāpienus augstāk. Vajag atgriezt cik veidos vari uzkāpt pa kāpnēm, lai sasniegtu augšu. 
+
+Links: https://leetcode.com/problems/climbing-stairs/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int climbStairs(int n) { 
+
+        if (n <= 2)  
+
+            return n;    
+
+        int pag1 = 1, pag2 = 2; 
+
+ 
+
+        for (int i = 3; i <= n; i++) { 
+
+            int pasreiz = pag1 + pag2; 
+
+            pag1 = pag2; 
+
+            pag2 = pasreiz; 
+
+        } 
+
+ 
+
+        return pag2; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, ātrāks risinājums par 100% no pārējiem iesniegtajiem. 
+
+ 
+ 
+
+### Uzdevums: Remove duplicates from sorted list 
+
+ 
+
+No sakārtota saraksta izņemt duplikātā vērtības un jāatgriež sarakts. 
+
+ 
+
+Links: https://leetcode.com/problems/remove-duplicates-from-sorted-list/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    ListNode* deleteDuplicates(ListNode* head) { 
+
+        ListNode* pasreiz = head; 
+
+ 
+
+        while (pasreiz != nullptr && pasreiz->next != nullptr) { 
+
+            if (pasreiz->val == pasreiz->next->val) { 
+
+                ListNode* duplikats = pasreiz->next; 
+
+                pasreiz->next = pasreiz->next->next; 
+
+                delete duplikats; 
+
+            } else { 
+
+                pasreiz = pasreiz->next; 
+
+            } 
+
+        } 
+
+ 
+
+        return head; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+### Uzdevums Longest substring without repeating characters 
+
+ 
+
+Atrast garāko virkni ar burtiem kuri neatkārtojas un atgriezt šīs virknes garumu. 
+
+ 
+
+Links: https://leetcode.com/problems/remove-duplicates-from-sorted-list/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int lengthOfLongestSubstring(string s) { 
+
+        unordered_map<char, int> m; 
+
+        int maxGarums = 0; 
+
+        int i = 0; 
+
+         
+
+        for (int j = 0; j < s.length(); j++) { 
+
+            if (m.find(s[j]) != m.end()) { 
+
+                i = max(i, m[s[j]] + 1); 
+
+            } 
+
+            m[s[j]] = j; 
+
+            maxGarums = max(maxGarums, j - i + 1); 
+
+        } 
+
+         
+
+        return maxGarums; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums Longest palindromic substring 
+
+ 
+
+Atrast garāko palindromu dotajā virknē un to atgriezt. 
+
+ 
+
+Links: https://leetcode.com/problems/longest-palindromic-substring/ 
+
+ 
+
+ 
+
+class Solution { 
+
+private: 
+
+    int parbaude(string &s, int kreisi, int labi) { 
+
+        while (kreisi >= 0 && labi < s.length() && s[kreisi] == s[labi]) { 
+
+            kreisi--; 
+
+            labi++; 
+
+        } 
+
+        return labi - kreisi - 1; 
+
+    } 
+
+ 
+ 
+
+public: 
+
+    string longestPalindrome(string s) { 
+
+        int n = s.size(); 
+
+        int saukms = 0; 
+
+        int maxGarums = 0; 
+
+ 
+ 
+
+        for (int i = 0; i < n; i++) { 
+
+            int gar1 = parbaude(s, i, i); 
+
+            int gar2 = parbaude(s, i, i + 1); 
+
+ 
+ 
+
+            int garums = max(gar1, gar2); 
+
+            if (garums > maxGarums) { 
+
+                maxGarums = garums; 
+
+                saukms = i - (garums - 1) / 2; 
+
+            } 
+
+        } 
+
+ 
+ 
+
+        return s.substr(saukms, maxGarums); 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums Zigzag conversion 
+
+ 
+
+Izveidot kodu kurs parvers virkni par zigzagu nemot vērā doto rindu skaitu, piem. Virkne " PAYPALISHIRING " ar rindu skaitu 3 =  
+
+ 
+
+P   A   H   N 
+A P L S I I G 
+Y   I   R 
+
+ 
+
+Un to lasot atgriezt pa rindai virkni, šajā gadījumā atgriezt vajag:  
+
+"PAHNAPLSIIGYIR" 
+
+ 
+
+Links: https://leetcode.com/problems/zigzag-conversion/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    string convert(string s, int numRows) { 
+
+        if (numRows <= 1) { 
+
+            return s; 
+
+        } 
+
+         
+
+        vector<string> rindas(numRows); 
+
+        int rinda = 0; 
+
+        int virziens = 1; 
+
+         
+
+        for (char c : s) { 
+
+            rindas[rinda] += c; 
+
+             
+
+            if (rinda == 0) { 
+
+                virziens = 1; 
+
+            } else if (rinda == numRows - 1) { 
+
+                virziens = -1; 
+
+            } 
+
+             
+
+            rinda += virziens; 
+
+        } 
+
+         
+
+        string res; 
+
+        for (string& rinda : rindas) { 
+
+            res += rinda; 
+
+        } 
+
+         
+
+        return res; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums Reverse Integer 
+
+ 
+
+Apgriezt skaitli otrādāk un atgriezt to. 
+
+ 
+
+Links: https://leetcode.com/problems/reverse-integer/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int reverse(int x) { 
+
+        long apgriezts = 0; 
+
+         
+
+        while (x != 0) { 
+
+            apgriezts = apgriezts * 10 + x % 10; 
+
+            x = x / 10; 
+
+        } 
+
+         
+
+        if (apgriezts > INT_MAX || apgriezts < INT_MIN) { 
+
+            return 0; 
+
+        } 
+
+         
+
+        return static_cast<int>(apgriezts); 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, patērē mazāk atmiņas par 94% no pārējo iesniegtajiem risinājumiem. 
+
+ 
+ 
+
+### Uzdevums Alternating digit sum 
+
+ 
+
+Dots skaitlis n, katru ciparu skaitlī vajag saskaitīt mainot zīmi katram otrajam ciparam. Piem. N = 321, res = 3 + (-2) + 1 
+
+ 
+
+Links: https://leetcode.com/problems/alternating-digit-sum/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int alternateDigitSum(int n) { 
+
+        vector<int> cipari; 
+
+        while (n > 0) { 
+
+            cipari.push_back(n % 10); 
+
+            n /= 10; 
+
+        } 
+
+        reverse(cipari.begin(), cipari.end()); 
+
+         
+
+        int sum1 = 0, sum2 = 0; 
+
+        for (int i = 0; i < cipari.size(); i++) { 
+
+            if (i % 2 == 0) { 
+
+                sum1 += cipari[i]; 
+
+            } else { 
+
+                sum2 += cipari[i]; 
+
+            } 
+
+        } 
+
+         
+
+        return sum1 - sum2; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums Generate Fibonnaci sequence 
+
+ 
+
+Ģenerēt n, fibonačī skaitļus. 
+
+ 
+
+Links: https://leetcode.com/problems/generate-fibonacci-sequence/description/ 
+
+ 
+
+function* fibGenerator() { 
+
+    let ieprieks = 0; 
+
+    let pasreiz = 1; 
+
+ 
+ 
+
+    yield ieprieks; 
+
+     
+
+    while (true) { 
+
+        yield pasreiz; 
+
+        [ieprieks, pasreiz] = [pasreiz, ieprieks + pasreiz]; 
+
+    } 
+
+} 
+
+ 
+
+Akceptēts 
+
+ 
+
+ 
+ 
+
+### Uzdevums Sort the people 
+
+ 
+
+Ievietot cilvēku vārdus virknē ņemot vērā to augumus. 
+
+ 
+
+Links: https://leetcode.com/problems/sort-the-people/ 
+
+ 
+
+class Solution { 
+
+public: std::vector<std::string> sortPeople(std::vector<std::string>& names, std::vector<int>& heights) { 
+
+    std::map<int, std::string> sakartotsM; 
+
+     
+
+    for (size_t i = 0; i < names.size(); i++) { 
+
+        sakartotsM[heights[i]] = names[i]; 
+
+    } 
+
+     
+
+    std::vector<std::string> sakartotsV; 
+
+     
+
+    for (auto it = sakartotsM.rbegin(); it != sakartotsM.rend(); ++it) { 
+
+        sakartotsV.push_back(it->second); 
+
+    } 
+
+     
+
+    return sakartotsV; 
+
+} 
+
+ 
+ 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+
+### Uzdevums Counting words with a given prefix 
+
+ 
+
+Masīvā ir doti vārdi, vajag atrast vārdus kuri satur doto priedēkli un atgriezt skaitu cik vardos ir šis priedēklis. 
+
+ 
+
+Links: https://leetcode.com/problems/counting-words-with-a-given-prefix/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    int prefixCount(std::vector<std::string>& words, std::string pref) { 
+
+        int skaits = 0; 
+
+        int priedGarums = pref.size(); 
+
+         
+
+        for (const std::string& word : words) { 
+
+            if (word.substr(0, priedGarums) == pref) { 
+
+                skaits++; 
+
+            } 
+
+        } 
+
+         
+
+        return skaits; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts 
+
+ 
+### Uzdevums Strong password checker II 
+
+ 
+
+Pārbaudīt vai dotā virkne satur: 
+
+Vismaz 8 rakstu zīmes 
+
+Vismaz vienu mazo burtu 
+
+Vismaz vienu lielo burtu 
+
+Vismaz vienu skaitli 
+
+Vismaz vienu simbolu 
+
+Tas nesatur 2 vienādas rakstzīmes blakus esošajās pozīcijās (t.i., "aab" pārkāpj šo nosacījumu, bet "aba" ne). 
+
+Ja sakrīt kritērijiem atgriezt true, ja nē tad false. 
+
+ 
+
+Links: https://leetcode.com/problems/strong-password-checker-ii/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    bool strongPasswordCheckerII(std::string p) { 
+
+        if (p.size() < 8) { 
+
+            return false; 
+
+        } 
+
+         
+
+        bool mazais = false, lielais = false, skaitlis = false, simbols = false; 
+
+         
+
+        for (char c : p) { 
+
+            if (c >= 'a' && c <= 'z') { 
+
+                mazais = true; 
+
+            } else if (c >= 'A' && c <= 'Z') { 
+
+                lielais = true; 
+
+            } else if (isdigit(c)) { 
+
+                skaitlis = true; 
+
+            } else { 
+
+                simbols = true; 
+
+            } 
+
+        } 
+
+         
+
+        for (int i = 0; i + 1 < p.size(); i++) { 
+
+            if (p[i] == p[i + 1]) { 
+
+                return false; 
+
+            } 
+
+        } 
+
+ 
+ 
+
+        if (mazais && lielais && skaitlis && simbols) { 
+
+            return true; 
+
+        } 
+
+         
+
+        return false; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, ātraks par 100% no iesniegtajiem risinājumiem. 
+
+ 
+ 
+
+### Uzdevums Check if numbers are ascending in a sentence 
+
+ 
+
+Dotā virknē pārbaudīt vai iesaistītie skaitļi ir augošā secībā. 
+
+ 
+
+Links: https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/ 
+
+ 
+
+class Solution { 
+
+public: 
+
+    bool areNumbersAscending(std::string s) { 
+
+        std::vector<int> skaitli; 
+
+         
+
+        int i = 0; 
+
+        int n = s.size(); 
+
+         
+
+        while (i < n) { 
+
+            if (isdigit(s[i])) { 
+
+                std::string temp; 
+
+                 
+
+                while (i < n && isdigit(s[i])) { 
+
+                    temp += s[i]; 
+
+                    i++; 
+
+                } 
+
+                 
+
+                skaitli.push_back(std::stoi(temp)); 
+
+            } 
+
+             
+
+            i++; 
+
+        } 
+
+         
+
+        for (int i = 0; i < skaitli.size() - 1; i++) { 
+
+            if (skaitli[i] >= skaitli[i + 1]) { 
+
+                return false; 
+
+            } 
+
+        } 
+
+         
+
+        return true; 
+
+    } 
+
+}; 
+
+ 
+
+Akceptēts, ātrāks par 100% no iesniegtajiem risinājumiem. 
+  
+  
+  
+ </details>
 
